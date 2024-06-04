@@ -1,0 +1,199 @@
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_comment"."id", "facebook_comment"."post_id", "facebook_comment"."user_id", "facebook_comment"."body", "facebook_comment"."created_on" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1 ORDER BY "facebook_comment"."created_on" ASC; args=(1,); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-04 07:41:18.912672' AND "django_session"."session_key" = 'jkbwcxh7yw5kgduxo0ov1q8hs08w5hy3') LIMIT 21; args=('2024-06-04 07:41:18.912672', 'jkbwcxh7yw5kgduxo0ov1q8hs08w5hy3'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_like"."id", "facebook_like"."post_id", "facebook_like"."user_id", "facebook_like"."kind" FROM "facebook_like" WHERE "facebook_like"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_like"."id", "facebook_like"."post_id", "facebook_like"."user_id", "facebook_like"."kind" FROM "facebook_like" WHERE "facebook_like"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-04 07:43:08.700898' AND "django_session"."session_key" = 'jkbwcxh7yw5kgduxo0ov1q8hs08w5hy3') LIMIT 21; args=('2024-06-04 07:43:08.700898', 'jkbwcxh7yw5kgduxo0ov1q8hs08w5hy3'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 1000; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) INSERT INTO "facebook_like" ("post_id", "user_id", "kind") VALUES (1, 2, NULL) RETURNING "facebook_like"."id"; args=(1, 2, None); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.016) INSERT INTO "facebook_like" ("post_id", "user_id", "kind") VALUES (1, 2, 'like') RETURNING "facebook_like"."id"; args=(1, 2, 'like'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_like"."id", "facebook_like"."post_id", "facebook_like"."user_id", "facebook_like"."kind" FROM "facebook_like" WHERE "facebook_like"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" IN (1); args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "facebook_like"."id", "facebook_like"."post_id", "facebook_like"."user_id", "facebook_like"."kind" FROM "facebook_like" WHERE "facebook_like"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" IN (1); args=(1,); alias=default
+(0.000) SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'testuser' LIMIT 1; args=(1, 'testuser'); alias=default
+(0.000) SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'testuseer' LIMIT 1; args=(1, 'testuseer'); alias=default
+(0.000) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('', NULL, 0, 'testuseer', '', '', 'testuser@example.com', 0, 1, '2024-06-04 07:54:27.750572') RETURNING "auth_user"."id"; args=('', None, False, 'testuseer', '', '', 'testuser@example.com', False, True, '2024-06-04 07:54:27.750572'); alias=default
+(0.000) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$720000$o7aA1vxS8l5DogscBEMtNq$2zZpFEUtdJaqYW5lR7OaaiGrRNTgbZnJeLKQM1ywQDY=', "last_login" = NULL, "is_superuser" = 0, "username" = 'testuseer', "first_name" = '', "last_name" = '', "email" = 'testuser@example.com', "is_staff" = 0, "is_active" = 1, "date_joined" = '2024-06-04 07:54:27.750572' WHERE "auth_user"."id" = 4; args=('pbkdf2_sha256$720000$o7aA1vxS8l5DogscBEMtNq$2zZpFEUtdJaqYW5lR7OaaiGrRNTgbZnJeLKQM1ywQDY=', False, 'testuseer', '', '', 'testuser@example.com', False, True, '2024-06-04 07:54:27.750572', 4); alias=default
+(0.000) INSERT INTO "facebook_profile" ("user_id", "city", "state", "country", "address", "image") VALUES (4, 'Test City', 'Test State', 'Test Country', '123 Test Street', '') RETURNING "facebook_profile"."id"; args=(4, 'Test City', 'Test State', 'Test Country', '123 Test Street', ''); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'testuseer' LIMIT 21; args=('testuseer',); alias=default
+(0.016) INSERT INTO "token_blacklist_outstandingtoken" ("user_id", "jti", "token", "created_at", "expires_at") VALUES (4, '5473277cb4354a2281c5ce37d686ea0a', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzU3NDEwNiwiaWF0IjoxNzE3NDg3NzA2LCJqdGkiOiI1NDczMjc3Y2I0MzU0YTIyODFjNWNlMzdkNjg2ZWEwYSIsInVzZXJfaWQiOjR9.qdxPqLaHMeHkluoKE32CqJ7RB0Ex-AeNhm_cASu8cIw', '2024-06-04 07:55:06.076974', '2024-06-05 07:55:06') RETURNING "token_blacklist_outstandingtoken"."id"; args=(4, '5473277cb4354a2281c5ce37d686ea0a', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzU3NDEwNiwiaWF0IjoxNzE3NDg3NzA2LCJqdGkiOiI1NDczMjc3Y2I0MzU0YTIyODFjNWNlMzdkNjg2ZWEwYSIsInVzZXJfaWQiOjR9.qdxPqLaHMeHkluoKE32CqJ7RB0Ex-AeNhm_cASu8cIw', '2024-06-04 07:55:06.076974', '2024-06-05 07:55:06'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post"; args=(); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 2); args=('like', 2); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 2); args=('unlike', 2); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 2; args=(2,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 3); args=('like', 3); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 3); args=('unlike', 3); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 3; args=(3,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 4); args=('like', 4); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 4); args=('unlike', 4); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 4; args=(4,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 5); args=('like', 5); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 5); args=('unlike', 5); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 5; args=(5,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 6); args=('like', 6); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 6); args=('unlike', 6); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 6; args=(6,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 7); args=('like', 7); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 7); args=('unlike', 7); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 7; args=(7,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 8); args=('like', 8); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 8); args=('unlike', 8); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 8; args=(8,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 9); args=('like', 9); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 9); args=('unlike', 9); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 9; args=(9,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) INSERT INTO "facebook_post" ("title", "content", "date_posted", "author_id") VALUES ('cool', 'goooood', '2024-06-04 07:56:01.610045', 4) RETURNING "facebook_post"."id"; args=('cool', 'goooood', '2024-06-04 07:56:01.610045', 4); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 10); args=('like', 10); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 10); args=('unlike', 10); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 10; args=(10,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.016) UPDATE "facebook_post" SET "title" = 'This field is required.', "content" = 'This field is required.', "date_posted" = '2024-06-03 14:37:11.058363', "author_id" = 4 WHERE "facebook_post"."id" = 1; args=('This field is required.', 'This field is required.', '2024-06-03 14:37:11.058363', 4, 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.015) UPDATE "facebook_post" SET "title" = 'This field is required.', "content" = 'This field is required.', "date_posted" = '2024-06-03 14:37:11.058363', "author_id" = 4 WHERE "facebook_post"."id" = 1; args=('This field is required.', 'This field is required.', '2024-06-03 14:37:11.058363', 4, 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) UPDATE "facebook_post" SET "title" = 'This field is required.', "content" = 'This field is required.', "date_posted" = '2024-06-03 14:37:11.058363', "author_id" = 4 WHERE "facebook_post"."id" = 1; args=('This field is required.', 'This field is required.', '2024-06-03 14:37:11.058363', 4, 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) UPDATE "facebook_post" SET "title" = 'new', "content" = 'This field is required.', "date_posted" = '2024-06-03 14:37:11.058363', "author_id" = 4 WHERE "facebook_post"."id" = 1; args=('new', 'This field is required.', '2024-06-03 14:37:11.058363', 4, 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) UPDATE "facebook_post" SET "title" = 'new', "content" = 'This field is required.', "date_posted" = '2024-06-03 14:37:11.058363', "author_id" = 4 WHERE "facebook_post"."id" = 1; args=('new', 'This field is required.', '2024-06-03 14:37:11.058363', 4, 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'like' AND "facebook_like"."post_id" = 1); args=('like', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_like" WHERE ("facebook_like"."kind" = 'unlike' AND "facebook_like"."post_id" = 1); args=('unlike', 1); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 1; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.015) DELETE FROM "facebook_comment" WHERE "facebook_comment"."post_id" IN (1); args=(1,); alias=default
+(0.000) DELETE FROM "facebook_like" WHERE "facebook_like"."post_id" IN (1); args=(1,); alias=default
+(0.000) DELETE FROM "facebook_post" WHERE "facebook_post"."id" IN (1); args=(1,); alias=default
+(0.000) COMMIT; args=None; alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) INSERT INTO "facebook_comment" ("post_id", "user_id", "body", "created_on") VALUES (2, 4, 'very good v', '2024-06-04 07:58:09.379029') RETURNING "facebook_comment"."id"; args=(2, 4, 'very good v', '2024-06-04 07:58:09.379029'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_comment"."id", "facebook_comment"."post_id", "facebook_comment"."user_id", "facebook_comment"."body", "facebook_comment"."created_on" FROM "facebook_comment" WHERE "facebook_comment"."post_id" = 2 ORDER BY "facebook_comment"."created_on" ASC; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" IN (2); args=(2,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4 LIMIT 21; args=(4,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.015) INSERT INTO "facebook_comment" ("post_id", "user_id", "body", "created_on") VALUES (2, 4, 'very good v', '2024-06-04 07:58:48.061176') RETURNING "facebook_comment"."id"; args=(2, 4, 'very good v', '2024-06-04 07:58:48.061176'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_like"."id", "facebook_like"."post_id", "facebook_like"."user_id", "facebook_like"."kind" FROM "facebook_like" WHERE "facebook_like"."post_id" = 2; args=(2,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) SELECT "facebook_post"."id", "facebook_post"."title", "facebook_post"."content", "facebook_post"."date_posted", "facebook_post"."author_id" FROM "facebook_post" WHERE "facebook_post"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.000) INSERT INTO "facebook_like" ("post_id", "user_id", "kind") VALUES (2, 2, 'like') RETURNING "facebook_like"."id"; args=(2, 2, 'like'); alias=default
